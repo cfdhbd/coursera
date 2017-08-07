@@ -1,0 +1,123 @@
+import numpy as np
+"""
+#Q1
+
+A = np.array([[1,2,3], [2,3,4], [3,4,5],[4,5,6]])
+print(A)
+"""
+
+"""
+#Q2
+A = np.array([[1,2,3,4],[2,3,4,5],[3,4,5,6]])
+B = A[[0,2],1:]
+print(B)
+"""
+#
+"""
+#Q4
+a = np.array([1,2,3,4])
+b = np.ones((5,5))
+b = a[:5]
+b = a[4:]
+b = np.ones(5, )
+#b = a[:2,:2]
+#b = np.ones(5,5)
+b = a[:2]
+#b = a[4]
+print(b)
+"""
+
+"""
+#Q5
+x = np.random.rand(100)
+print(x)
+"""
+
+"""
+#Q6
+x = np.random.rand(100)
+x[x>0.5] =1
+print(x)
+"""
+
+"""
+#Q7
+x = [1,2,3,4,5,6]
+#b = x[x > 1][:3]
+#b = x[:3] >1
+#b = (x>1)[:3]
+#b = (x>1).nonzero()[0][:3]
+#not sure
+print(b)
+#####not x[x>1][:3]
+"""
+
+"""
+#Q8
+import pickle
+with open('data.pickle','rb') as f:
+    data = f
+######not above^^^^
+import pickle
+with open('data.pickle','rb') as f:
+    data = pickle.load(f)
+"""
+
+"""
+#Q9
+data = {'a':3, 'c':9, 'b':5}
+data['b'] = 100
+
+print(data)
+"""
+
+"""
+#Q10
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(0,5,step=0.05)
+y = np.sin(x**2)
+plt.plot(x,y)
+plt.show()
+"""
+
+"""
+#Q11
+x = np.array([1,2,3,4,5])
+y = x**3
+print(y)
+"""
+
+"""
+#Q12
+x = np.array([[1,2,3],[2,3,4]])
+x *= 5
+x -= 1
+x[x>10] =0
+x=x.T
+print(x)
+"""
+
+"""
+#Q13
+#x = [2]
+#y = x in [2,5,9]
+#yes^
+x = [2]
+y = False
+if x in[2,5,9]:
+    y = True
+##also yes^
+
+if x in [2,5,9]:
+    y = True
+else:
+    y = False
+###also yes^
+print(y)
+"""
+
+
+#Q14
+#interrupts executions and temporarily gives control to the user
