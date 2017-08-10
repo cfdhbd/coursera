@@ -1,8 +1,4 @@
 """
-Created on Wed Apr 22 15:21:11 2015
-
-@author: rkp
-
 Code to compute spike-triggered average.
 """
 
@@ -11,13 +7,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def compute_sta(stim, rho, num_timesteps):
+def compute_sta(stim, rho, num_timesteps, num_obv_spikes):
     """Compute the spike-triggered average from a stimulus and spike-train.
 
     Args:
         stim: stimulus time-series
         rho: spike-train time-series
         num_timesteps: how many timesteps to use in STA
+        num_obv_spikes: observed spikes after 300 ms
 
     Returns:
         spike-triggered average for specified number of timesteps before spike"""
@@ -30,7 +27,7 @@ def compute_sta(stim, rho, num_timesteps):
 
     # Fill in this value. Note that you should not count spikes that occur
     # before 300 ms into the recording.
-    num_spikes =
+    num_spikes = num_obv_spikes
 
     # Compute the spike-triggered average of the spikes found.
     # To do this, compute the average of all of the vectors
