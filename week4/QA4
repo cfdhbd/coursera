@@ -1,4 +1,4 @@
-Grade: missed 2&9
+Grade: 80%
 
 Q1:
 Suppose that we have a neuron which, in a given time period, will fire with probability 0.1, yielding a Bernoulli distribution for the neuron's firing (denoted by the random variable F = 0 or 1) with P(F = 1) = 0.1.
