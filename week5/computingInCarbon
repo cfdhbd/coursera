@@ -1,0 +1,40 @@
+Grade:
+
+_______________________________________________________________________________
+Q1: When we talk about "spikes", we are referring to the change in some property of the neuron over time. When we typically plot a spike, the x-axis represents time. What does the y-axis represent?
+
+A: voltage
+
+_______________________________________________________________________________
+Q2:A ircuit diagram representing a piece of neuronal cell membrane, the battery, resistor, and capacitor are roughly analogous to the ___, ___, and ___ respectively.
+
+A:
+battery = ion gradient
+resistor = ion channel
+capacitor = lipid bilayer
+
+_______________________________________________________________________________
+Q3: Let's imagine there is another ion that is relevant to determining a neuron's membrane potential in addition to those discussed in the lecture. We'll call the ion Im+ (for Imaginary). The equilibrium potential of Im+ (EIm) is -100 mV. Assume the resting potential of the neuron is -65 mV. When specialized Im+ channels open, the Im+ conductance will increase. This will ___ the cell, thus ___ its membrane potential.
+
+A: depolarize, decreasing
+
+_______________________________________________________________________________
+Q4:Suppose Im+ channels are composed of 5 subunits that open and close independently, as well as an additional "ball-in-socket" gating mechanism. Each of the 5 subunits has a voltage-dependent open probability u and closed probability (1−u), while the ball-in-socket gating mechanism has a voltage-dependent open probability z and closed probability (1−z). Which expression could most likely be used to express the Im+ current across the membrane?
+
+A: I{Im}=g{Im}*(1−u)^5*(1−z)*(V−EIm)
+
+
+_______________________________________________________________________________
+Q5: picture of graph, involving time constant. the one with the smaller time constant
+will be the first to reach steady state.
+
+A: m
+
+_______________________________________________________________________________
+Q6:
+
+
+
+
+_______________________________________________________________________________
+Q7:
