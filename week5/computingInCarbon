@@ -31,10 +31,50 @@ will be the first to reach steady state.
 A: m
 
 _______________________________________________________________________________
-Q6:
+Q6: Na+ current depolarizes the cell and is the principal driver for the upward portion of a spike. Both m and h must be high for there to be a lot of Na+ current. h∞ becomes 0 when voltage is close to or greater than -30 mV. How, then, is it possible for the membrane to depolarize beyond V = -30 mV during a spike (spikes peak closer to V = 40 mV)?
+
+A: τh is high relative to τm, so h does not reach h∞ fast enough to block the spike.
+
+
+_______________________________________________________________________________
+Q7:True or false: All neural coding can essentially be reduced to variations in firing rate. This allows the information in complex spiking patterns to be summarized in a "rate code."
+
+A: True
+
+
+
+_______________________________________________________________________________
+Q8: Recall the exponential integrate and fire neuron model, schematized above. How many stable fixed points does the system have?
+
+A: 1
+
+
+_______________________________________________________________________________
+Q9:The FitzHugh-Nagumo model is a 2-dimensional dynamical neuron model. It is defined by the following two differential equations:
+
+dVdt=V(a−V)(V−1)−w+I
+dwdt=bV−cw
+
+where V is voltage, w represents an outward hyperpolarizing current, I is injected current, and a, b, and c are constants.
+
+Which of the following is an expression for the w-nullcline?
+
+A: w = bV/c
+
+
+_______________________________________________________________________________
+Q10:
+
+
+A:
+
 
 
 
 
 _______________________________________________________________________________
-Q7:
+Q11:
+
+
+
+A:
