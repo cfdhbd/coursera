@@ -63,12 +63,10 @@ A: w = bV/c
 
 
 _______________________________________________________________________________
-Q10:
+Q10: The above figure is a phase plane based on the FitzHugh-Nagumo model from the previous question. A vector field is shown that gives a sense of the flow of the system. If we observe a spike in this system, the trajectory will travel counterclockwise around the phase plane. The first part, or “upstroke,” of the spike occurs in which of the following regions of the phase plane (regions are labeled in the figure)?
 
 
-A:
-
-
+A: (A) because it is angled from 0 to 90 deg
 
 
 
