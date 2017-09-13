@@ -1,0 +1,108 @@
+Grade: 100%
+
+
+_______________________________________________________________________________
+Q1:image processing
+
+Let's design some feedforward networks that can do some basic operations on their inputs. This could mean lowering their intensity, looking for strong changes, or one of many other possibilities. One nice way to build intuition for this sort of processing is to think of these networks as operating on images. Even though our networks will operate over only 5 pixels of image data, we can still build the same basic operations that we would for a regular image.
+
+image is yellow on left side, black on right side. looks like yellow paint on asphalt surface
+
+Supposed we processed the image from (very fine detail) to (fuzzy/out of focus)
+
+Which of the following weight matrices W would give us a feedforward network most closely approximating this image processing operation?
+
+A1: sporadic 1's...keep detail only in some areas
+X
+
+A1: 0.33
+
+
+
+
+
+_______________________________________________________________________________
+Q2: image (very fine detail) to (fine detail but darkened)
+
+A2: 0.5
+
+
+_______________________________________________________________________________
+Q3: image (very fine detail) to (all dark except for yellow line running down the middle)
+
+A3: 0.75 & -0.75 (darken yellow, keep black)
+
+_______________________________________________________________________________
+Q4: pixelated
+
+A4: 0.33
+X
+
+A4: 1
+
+mixed up Q1&4
+
+_______________________________________________________________________________
+Q5: In lecture 6.2, we encountered a process of conceptual abstraction, taking us from modeling individual neurons to modeling whole networks. By the middle of the lecture, we had abstracted away many of the interesting time dynamics of feedforward neural networks and arrived at a simple equation:
+
+vss=F(Wu)
+We have to make a number of assumptions to get to this equation. Necessarily we lose some interesting information when we make these assumptions from the beginning of lecture 6.2 to the point where we first see this equation (roughly 10 min in). Which of the following holds true? (Check all that are true)
+
+A5:
+
+This model ignores the firing rates of the output cells.
+
+This model cannot adequately represent many of the dynamics of individual cells, such as the effect of the refractory period.
+
+This model ignores patterns in the input and output spike timings, opting instead to simply look at firing rates.
+
+This model shows us the outputs the system will converge to, but no longer describes the time dynamics of that convergence.
+
+This model ignores the effects of synchrony and correlation between the input neurons.
+
+_______________________________________________________________________________
+Q6: Use 'Q6_9' matlab file to answer questions
+
+The parameter “tpeak” controls when the alpha function peaks after an input spike occurs (and hence how long the effects of an input spike linger on in the postsynaptic neuron). “tpeak” for excitatory synapses in the brain may vary from 0.5 ms (AMPA or non-NMDA) to 40 ms (NMDA synapse).
+
+Vary the value of tpeak from 0.5 ms to 10 ms in steps of 0.5 ms and observe how this influences the output of the neuron for the fixed input spike train used in this code.
+
+Plot the output spike count as a function of tpeak for the given input spike train.
+
+Which of the following answers best describes the relationship between the value of tpeak and the firing rate of the neuron?
+
+
+
+A6: The neuron's firing rate increases superlinearly as a function of the value of tpeak.
+X
+
+A6: The neuron's firing rate increases sublinearly as a function of the value of tpeak.
+
+
+
+
+
+_______________________________________________________________________________
+Q7: Which of the following explanations best explains how the value of tpeak influences the firing rate of the neuron?
+
+A7: Increasing the value of tpeak decreases the decay rate of the synaptic conductance, allowing more charge to flow per spike and increasing the extent of the summation between input spikes.
+
+_______________________________________________________________________________
+Q8: How would you turn this synapse into an inhibitory synapse? (Check all that apply)
+
+
+A8:
+
+Changing the value of Esyn to be less than 0.
+
+Changing the value of Esyn to be less than that of Eleak.
+
+
+
+_______________________________________________________________________________
+Q9: Given W, u, M, calc the steady state output
+
+A9: 0.547
+X
+
+A9: 0.616
