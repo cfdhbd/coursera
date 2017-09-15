@@ -182,3 +182,7 @@ each iteration increases accuracy, of course
 Lecture 3
 images can be become combinations (sums) of eigenvectors *input
 use only first M principal eigenvectors (largest eigenvectors)
+generative model can segregate specific inputs. then, inputs are sparesely activated, leading to a 'super-gaussian' distribution (with a heavy tail)
+bayesian approach to maximize posterior probability of cause = likelihood*prior
+take into account sparseness constraint (encourages sparseness)
+predictive coding networks

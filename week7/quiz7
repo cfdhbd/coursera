@@ -27,6 +27,10 @@ A1: [0.8944 ; 1.7013]
 (i looked at the forums and everyone is getting this question wrong...something something data)
 X
 
+A1: last answer
+X
+lol....so none of the answers were correct. Yup. I was getting different eigenvectors.
+That explains it
 
 _______________________________________________________________________________
 Q2: What does the weight vector we found in Question 1 tell us?
@@ -105,9 +109,7 @@ A7: The input data is two dimensional and therefore the correlation matrix has t
 
 X
 A7:
-There is only one principal eigenvector of the correlation matrix, but there are two vectors of length 1α‾‾√ that are perpendicular to this eigenvector. w converges to either of these two vectors.
-
-X
+There is only one principal eigenvector of the correlation matrix, but there are two vectors of length 1α‾‾√ that are parallel to this eigenvector. w converges to either of these two vectors.
 
 _______________________________________________________________________________
 Q8: What happens when the data is not zero-mean centered before the learning process?
