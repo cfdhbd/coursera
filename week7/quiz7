@@ -13,6 +13,7 @@ Suppose the input correlation matrix Q is:
 Q=[0.2, 0.1; 0.1, 0.3]
 If we allow learning to go on for a long period of time, which of these could be a final weight vector w?
 
+not getting any of these...
 
 A1:
  [-1.51 ; -1.30]
