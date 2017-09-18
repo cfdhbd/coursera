@@ -1,0 +1,157 @@
+Grade1: 69%
+Grade2: 79%
+Grade3: 90%
+
+_______________________________________________________________________________
+Q1: When we talk about "spikes", we are referring to the change in some property of the neuron over time. When we typically plot a spike, the x-axis represents time. What does the y-axis represent?
+
+A: voltage
+
+_______________________________________________________________________________
+Q2:A ircuit diagram representing a piece of neuronal cell membrane, the battery, resistor, and capacitor are roughly analogous to the ___, ___, and ___ respectively.
+
+A:
+battery = ion gradient
+resistor = ion channel
+capacitor = lipid bilayer
+
+_______________________________________________________________________________
+Q3: Let's imagine there is another ion that is relevant to determining a neuron's membrane potential in addition to those discussed in the lecture. We'll call the ion Im+ (for Imaginary). The equilibrium potential of Im+ (EIm) is -100 mV. Assume the resting potential of the neuron is -65 mV. When specialized Im+ channels open, the Im+ conductance will increase. This will ___ the cell, thus ___ its membrane potential.
+
+A: depolarize, decreasing
+X
+A2: depolarize, increasing (like gravity & height)
+X
+A3: hyperpolarize (means becoming more negative..duh), increasing
+_______________________________________________________________________________
+Q4:Suppose Im+ channels are composed of 5 subunits that open and close independently, as well as an additional "ball-in-socket" gating mechanism. Each of the 5 subunits has a voltage-dependent open probability u and closed probability (1−u), while the ball-in-socket gating mechanism has a voltage-dependent open probability z and closed probability (1−z). Which expression could most likely be used to express the Im+ current across the membrane?
+
+A: I{Im}=g{Im}*(1−u)^5*(1−z)*(V−EIm)
+X
+A2: IIm=g¯Imu5z(V−EIm)
+
+_______________________________________________________________________________
+Q5: picture of graph, involving time constant. the one with the smaller time constant
+will be the first to reach steady state.
+
+A: m
+
+_______________________________________________________________________________
+Q6: Na+ current depolarizes the cell and is the principal driver for the upward portion of a spike. Both m and h must be high for there to be a lot of Na+ current. h∞ becomes 0 when voltage is close to or greater than -30 mV. How, then, is it possible for the membrane to depolarize beyond V = -30 mV during a spike (spikes peak closer to V = 40 mV)?
+
+A: τh is high relative to τm, so h does not reach h∞ fast enough to block the spike.
+
+
+_______________________________________________________________________________
+Q7:True or false: All neural coding can essentially be reduced to variations in firing rate. This allows the information in complex spiking patterns to be summarized in a "rate code."
+
+A: True
+X
+A2: False...depending on the theory and depth of information, the spike height, time, and thresholds are also very important.
+
+
+_______________________________________________________________________________
+Q8: Recall the exponential integrate and fire neuron model, schematized above. How many stable fixed points does the system have?
+
+A: 1
+
+
+_______________________________________________________________________________
+Q9:The FitzHugh-Nagumo model is a 2-dimensional dynamical neuron model. It is defined by the following two differential equations:
+
+dVdt=V(a−V)(V−1)−w+I
+dwdt=bV−cw
+
+where V is voltage, w represents an outward hyperpolarizing current, I is injected current, and a, b, and c are constants.
+
+Which of the following is an expression for the w-nullcline?
+
+A: w = bV/c
+
+
+_______________________________________________________________________________
+Q10: The above figure is a phase plane based on the FitzHugh-Nagumo model from the previous question. A vector field is shown that gives a sense of the flow of the system. If we observe a spike in this system, the trajectory will travel counterclockwise around the phase plane. The first part, or “upstroke,” of the spike occurs in which of the following regions of the phase plane (regions are labeled in the figure)?
+
+
+A: (A) because it is angled from 0 to 90 deg
+X
+A2:lol i read the picture wrong. D! is the one angled 0-90
+
+
+_______________________________________________________________________________
+Q11:What if the current were not turned off? What would the steady state voltage of the membrane be?
+
+Use the values given in the script to compute your answer (C = 0.1 nF, R = 100 MΩ, I = 10 nA). You should give your answer in mV. Do not include units in your answer.
+
+
+A: 1000
+
+_______________________________________________________________________________
+Q12: Change the values for the membrane's resistance and capacitance (R and C), and find out how this influences the response of the membrane. Does it reach a stable value more quickly or more slowly after multiplying R by 5?
+
+A: More slowly. Explanation: the increased resistance requires more energy for the voltage to reach the same max level (might be improper terminology...)
+
+
+_______________________________________________________________________________
+Q13: Does it reach a stable value more quickly or more slowly after dividing C by 10?
+
+
+A: More quickly. Explanation: lower capacitance means the energy is more quickly 'maxed out' (again...learning terminology...will take coursera course on EE soon)
+
+_______________________________________________________________________________
+Q14: Does it reach a stable value more quickly or more slowly after multiplying R by 10 AND dividing C by 10?
+
+A: Same rate. The equations are linearly related.
+
+
+_______________________________________________________________________________
+Q15: An experimental method for calculating a membrane’s time constant τ (when R and/or C are not known) is to start at zero and record the time at which the membrane potential V reaches a value approximately equal to 0.6321Vpeak=0.6321IR, where I is the constant injected current. Check if this method works by injecting different amounts of current I and changing the values for R and C. Once you’ve convinced yourself that the experimental τ appears to be identical to the theoretical τ(=RC) in all these cases, provide a theoretical justification for why this method works.
+
+To do this, find the solution to the differential equation for the passive membrane:
+
+dVdt=−VRC+IC
+V(0)=0
+After solving the differential equation you should be able to use the fact that Vpeak=IR and e−1e=.6321 to complete the derivation and show that V(τ)=0.6321IR.
+
+Which of these equations is the solution to the given differential equation?
+
+
+A: V(t)=IR(1−e^(−t/τ))
+
+(need to review partial differential equations)
+
+_______________________________________________________________________________
+Q16: What is the largest current that will fail to cause the neuron to spike? Give your answer in pA and round down to the nearest 10 pA. Do not include units in your answer.
+
+You should vary the input current gradually from very low to high values to find this value and then validate your answer with an analytical solution.
+
+
+NOTE: 1nA = 1000pA
+A: 250 pA
+
+_______________________________________________________________________________
+Q17: What is the maximum firing rate (spike count/trial duration) of this neuron? Give your answer in Hz and round your answer to the nearest integer value. Do not include the units in your answer.
+
+
+A: 4spikes / 20 seconds = 1/5 = 0.2 Hz
+X
+A2: for Hz..inverse...5. also equal to the absolute refractory period
+X
+A3: not counting the initial...1/3 = 3Hz
+...still wrong. not sure.
+
+_______________________________________________________________________________
+Q18: Now let's consider the case that your neuron is not receiving simply a constant input, but a barrage of asynchronous inputs from many other neurons.
+
+Model this with the following code by adding a white noise component to the input current (the constant part of the input current is reset to one nA):
+
+Plot the interspike interval distribution, that is, the distribution of the time intervals between spikes, for a range of different noise amplitudes. (Hints: this noise component is already implemented in the code: just switch it on. You can make use of the Matlab functions diff and hist. You will probably want to increase tstop, the length of time you are integrating for, by quite a bit to get a well-sampled histogram.)
+
+What best describes how this distribution changes as you increase the amplitude of the noise input? (Stay within a range between 0 and 5 nA.)
+
+
+A: The distribution of intervals becomes approximately Gaussian, with a width that increases with the amplitude of the noise.
+X
+A2: The distribution of intervals widens from a narrow peak to become a gamma distribution.
+X
+A3: exponential...
