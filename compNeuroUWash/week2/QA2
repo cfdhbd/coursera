@@ -1,0 +1,35 @@
+#Q1
+#which is not a linear filtering system
+#answer: integral
+#answer 2 cos
+
+#Q2
+#which is spike triggered average for a neuron?
+#the stimuli preceding a spike, averaged over all stimuli that elicited a spike
+#set of stimuli preceding a spike averaged over time
+#X
+
+
+#Q3
+#what is the sampling period? (how many milliseconds b/w adjacent samples)
+# 1/500 = 0.002 s = 2 ms
+
+#Q4
+150
+
+#Q5
+#53583
+
+#Q6
+#smooth up down to same place (
+
+#Q7
+#running average
+#leaky integration
+
+#Q8
+#neg value followed by positive value
+#X
+
+#Q9
+#principal component analysis / covariance analysis
